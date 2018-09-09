@@ -7,14 +7,14 @@ class BurgerIngredient extends Component {
     let ingredient = null;
 
     switch (this.props.type) {
-      case 'bread-buttom':
-        ingredient = <div className="">{classes.BreadBottom}</div>;
+      case 'bread-bottom':
+        ingredient = <div className={classes.BreadBottom} />;
         break;
       case 'bread-top':
         ingredient = (
           <div className={classes.BreadTop}>
-            <div className={classes.Seads1} />
-            <div className={classes.Seads2} />
+            <div className={classes.Seeds1} />
+            <div className={classes.Seeds2} />
           </div>
         );
         break;
@@ -28,7 +28,8 @@ class BurgerIngredient extends Component {
         ingredient = <div className={classes.Cheese} />;
         break;
       case 'bacon':
-        ingredient = <div className={classes.Cheese} />;
+        ingredient = <div className={classes.Bacon} />;
+        break;
       default:
         ingredient = null;
     }
