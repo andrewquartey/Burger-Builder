@@ -17,7 +17,7 @@ const burger = props => {
   console.log(ingredients);
 
   if (ingredients < 1) {
-    ingredients = 'Plaes add yor ingredients';
+    ingredients = 'Please add yor ingredients';
   }
   return (
     <div className={classes.Burger}>
